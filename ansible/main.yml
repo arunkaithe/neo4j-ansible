@@ -1,6 +1,7 @@
 ---
-- hosts: dev
+- hosts: dev-neo4j
   sudo: yes
+  gather_facts: yes
 
   roles:
     - java
