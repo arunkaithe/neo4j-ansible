@@ -1,7 +1,8 @@
 ---
 - hosts: dev-neo4j
   user: ubuntu
-  become_user: yes
+  become: yes
+  become_method: sudo
   gather_facts: yes
 
   roles:
